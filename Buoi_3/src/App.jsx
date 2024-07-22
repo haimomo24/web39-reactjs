@@ -1,35 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
+import React from "react"
+import "./assets/styles.css"
+// es6 
+const App = () =>{
+  const name = "web99";
+  const rate = 5;
+  
+  const handleAlert = () =>{
+      alert("Hi chao cau !");
+  } 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <React.Fragment>
+      <h1 className = {`title-${rate}`} style={{color:"red"}}>He lo 500 anh em {name}</h1>
+      <p className="description"> bla bla bla </p>
+      <img src="../public/images1.jpg" />
+
+      
+      <button onClick={handleAlert}>Thong bao</button>
+      <button onClick={()=>alert(123)}>qq</button>
+      
+    </React.Fragment>
+   
   )
 }
-
 export default App
