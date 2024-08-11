@@ -4,6 +4,8 @@ import Home from "./pages/user/Home";
 import NotFound from "./pages/user/NotFound";
 import Layout from "./pages/user/Layout";
 import ProductsDetail from "./pages/user/ProductsDetail";
+import Dasbhoad from "./pages/admin/Dashboad";
+import LayoutAdmin from "./pages/admin/LayoutAdmin";
 
 const App = () => {
   return (
@@ -14,6 +16,12 @@ const App = () => {
           <Route path="*" element={<NotFound />} />
           <Route path="/product/:id" element={<ProductsDetail/>} />
         </Route>
+
+        <Route path="/dashboad" element={<LayoutAdmin/>}>
+        <Route index element={<Dasbhoad/>} />
+        </Route>
+          
+        
       </Routes>
     </BrowserRouter>
   );
