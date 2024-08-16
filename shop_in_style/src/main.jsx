@@ -14,6 +14,9 @@ import "./assets/admin/js/jquery.min.js";
 import "./assets/admin/js/bootstrap.bundle.min.js";
 import "./assets/admin/js/apexcharts.min.js";
 
+// import tailwind 
+import "./assets/confix-tailwind/tailwind.css"
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />

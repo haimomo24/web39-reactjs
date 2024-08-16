@@ -73,6 +73,20 @@ const Header = () => {
             </span>
           </button>
         </form>
+           
+        <form className="d-flex">
+          <Link to="/login"> 
+          <button className="btn btn-outline-dark" type="submit">login</button>
+          
+          </Link>
+         
+           
+           
+            
+           
+            
+         
+        </form>
       </div>
     </div>
     </nav>
